@@ -44,7 +44,7 @@
       <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Send Message</button>
     </form> -->
 
-    <form action="https://formsubmit.co/naresh.canny@gmail.com" method="POST" class="space-y-6">
+<!--     <form action="https://formsubmit.co/naresh.canny@gmail.com" method="POST" class="space-y-6">
     <input type="hidden" name="_captcha" value="false">
     <label class="block">
       <span class="font-medium">Name</span>
@@ -59,7 +59,33 @@
       <textarea name="message" rows="5" required class="w-full mt-1 p-2 border border-gray-300 rounded"></textarea>
     </label>
     <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send Message</button>
-  </form>
+  </form> -->
+
+    <form action="https://formsubmit.co/naresh.canny@gmail.com" method="POST" class="space-y-6">
+  <!-- Prevents CAPTCHA -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Redirect to thank you page -->
+  <input type="hidden" name="_next" value="https://nareshcanny.github.io/webvitalsboost/thank-you.html">
+
+  <!-- Acknowledge email -->
+  <input type="hidden" name="_autoresponse" value="Thank you for contacting us! We’ll get back to you soon.">
+
+  <label class="block">
+    <span class="font-medium">Name</span>
+    <input type="text" name="name" required class="w-full mt-1 p-2 border border-gray-300 rounded" />
+  </label>
+  <label class="block">
+    <span class="font-medium">Email</span>
+    <input type="email" name="email" required class="w-full mt-1 p-2 border border-gray-300 rounded" />
+  </label>
+  <label class="block">
+    <span class="font-medium">Message</span>
+    <textarea name="message" rows="5" required class="w-full mt-1 p-2 border border-gray-300 rounded"></textarea>
+  </label>
+  <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send Message</button>
+</form>
+
 
   </section>
 
